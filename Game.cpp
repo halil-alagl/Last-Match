@@ -5,7 +5,7 @@
 int main() {
 
     // Use brace-initialization to avoid the "most vexing parse" (function declaration)
-    sf::RenderWindow window{ sf::VideoMode({640, 360}), "Last Match" };
+    sf::RenderWindow window{ sf::VideoMode({640, 360}), "Last Match",sf::Style::Titlebar | sf::Style::Close };
     Player player(5);
 
 
@@ -14,7 +14,6 @@ int main() {
             if (event->is<sf::Event::Closed>())
                 window.close();
         }
-
         window.clear();
         player.update();
         player.draw(window);

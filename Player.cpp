@@ -30,7 +30,7 @@ Player::Player(/*std::string& texturePath*/ int speed) : speed(0.05f) {
         std::cout << "Texture can't be loaded";
     }
     sprite.setTexture(texture);*/
-    sprite.setSize({ 25,25 });
+    sprite.setSize({ 25,40 });
     sprite.setFillColor(sf::Color::Blue);
     sprite.setPosition({ 30,60 });
 }

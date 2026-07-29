@@ -1,5 +1,3 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
 #include "Player.hpp"
 
 sf::FloatRect Player::getBounds() {

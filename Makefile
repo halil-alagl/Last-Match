@@ -1,3 +1,3 @@
 all:
-	g++ Game.cpp Player.cpp -o Game -lsfml-graphics -lsfml-window -lsfml-system 
+	g++ Game.cpp Player.cpp Box.cpp -o Game -lsfml-graphics -lsfml-window -lsfml-system 
 	./Game

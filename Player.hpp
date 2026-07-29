@@ -9,10 +9,13 @@ private:
         sf::Texture texture;
     */
     sf::RectangleShape sprite;
-    int speed = 0.05f;
+    int speed;
+    float width;
+    float height;
+    int velocity;
 public:
     void update();
     void draw(sf::RenderWindow& window);
     sf::FloatRect getBounds();
-    Player(/*std::string& texturePath*/ int speed);
+    Player(/*std::string& texturePath*/ int speed, float width, float height);
 };

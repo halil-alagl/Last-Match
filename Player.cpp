@@ -25,12 +25,12 @@ void Player::draw(sf::RenderWindow& window) {
     window.draw(sprite);
 }
 
-Player::Player(/*std::string& texturePath*/ int speed) : speed(0.05f) {
+Player::Player(/*std::string& texturePath*/ int speed, float width, float height) : speed(speed), height(height), width(width) {
     /*if (!texture.loadFromFile(texturePath)) {
         std::cout << "Texture can't be loaded";
     }
     sprite.setTexture(texture);*/
-    sprite.setSize({ 25,40 });
+    sprite.setSize({ width,height });
     sprite.setFillColor(sf::Color::Blue);
     sprite.setPosition({ 30,60 });
 }

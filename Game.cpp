@@ -4,9 +4,8 @@
 
 int main() {
 
-    // Use brace-initialization to avoid the "most vexing parse" (function declaration)
     sf::RenderWindow window{ sf::VideoMode({640, 360}), "Last Match",sf::Style::Titlebar | sf::Style::Close };
-    Player player(5);
+    Player player(5, 25, 40);
 
 
     while (window.isOpen()) {

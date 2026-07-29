@@ -5,7 +5,7 @@
 int main() {
 
     sf::RenderWindow window{ sf::VideoMode({640, 360}), "Last Match",sf::Style::Titlebar | sf::Style::Close };
-    Player player(5, 25, 40);
+    Player player(0.05, 25, 40);
 
 
     while (window.isOpen()) {
